@@ -45,7 +45,7 @@ int main()
 
     int n2{n1};//copiar n1 en un nuevo campo de memoria dentro de n2
 
-    int& n3{n1};// esto es un valor por referencia, estas creando literalmente no una varabile normal, si una direccion en memoria de algo
+    int& n3{n1};// esto es un valor por referencia, estas creando literalmente no una variable normal, si una direccion en memoria de algo
 
 
     std::cout << "n1 value: " << n1 << std::endl;

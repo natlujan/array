@@ -3,13 +3,15 @@
 	"tasks": [
 		{
 			"type": "shell",
-			"label": "C/C++: g++.exe build active file",
-			"command": "C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\g++.exe",
+			"label": "build",
+			"command": "g++",
 			"args": [
-				"-g",
-				"${file}",
+				"-std=c++17",
+				"-I",
+				"include",
+				"src/*.cc",
 				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+				"bin/arrays.exe"
 			],
 			"options": {
 				"cwd": "${workspaceFolder}"
